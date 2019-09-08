@@ -1,0 +1,170 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #f44336;
+}
+
+h1{
+    text-align: center; 
+    margin:none;
+}
+
+#home h1, #education h1, #contact h1 {
+    color: white;
+}
+
+#about h1, #projects h1 {
+    color: #f44336;
+}
+
+#navbar {
+    position: fixed;
+    width: 100vw;
+    height: 12vh;
+    background: white; 
+    z-index: 5;
+}
+
+#home {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    padding-top: 12vh;
+}
+
+#about {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    padding-top: 12vh;
+}
+
+#education {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    padding-top: 12vh;
+}
+
+#projects {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    padding-top: 12vh;
+}
+
+#contact {
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    padding-top: 12vh;
+}
+
+#menu-list li:first-child {
+    display: inline-block;
+    /* width: 22vw; */
+    text-align: center;
+    margin-right: 50vw;
+    margin-left: 7vw;
+    font-size: 18px;
+}
+
+#menu-list li {
+    /* border: 1px solid red; */
+    font-size: 16px;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    margin-top: 4vh;
+    margin-left: 2vw;
+    position: relative;
+}
+
+.menu-option {
+    text-decoration: none;
+    color: #212121;
+    z-index: 1;
+}
+
+.menu-option:hover {
+    text-decoration: none;
+    color: #f44336;
+}
+
+
+.menu-option:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: #f44336;
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+}
+
+.menu-option:hover:before, .menu-option:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* delete me  */
+#source-files { 
+    position: relative;
+    top: 20vh;
+    left: 39vw;
+    width: 22vw;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 18px;
+    background: #f44336;
+    border: none;
+    color: white;
+    font-weight: 400;
+}
+
+/* delete me  */
+#source-files:hover{
+    color: #212121;
+}
+
+#about-image, #about-text {
+    display: inline-block;
+    height: 55vh;
+    vertical-align: top;
+}
+
+#about-image {
+    width: 28vw;
+    margin-left: 10vw;
+}
+
+#about-image div {
+    height: 88%;
+    margin: 20px;
+    background-image: url("https://i.ytimg.com/vi/k172-imyXmU/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size: 130% 100%;
+}
+
+#about-text {
+    width: 49vw;
+    margin-left: 3vw;
+    text-align: center;
+}
+
+#about-text p {
+    font-size: 16px;
+    margin-top: 50px;
+}
+
+#resume-button:hover{
+    color: #f44336;
+}
